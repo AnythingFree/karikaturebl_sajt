@@ -14,6 +14,17 @@
 </head>
 
 <body class="homepage is-preload">
+	
+	<!-- Scroll to top button -->
+	<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Back to top</button> 
+	<script>
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+	</script>
+
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -25,29 +36,11 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
-					<li>
-						<a href="#">Naruči katikaturu</a>
-						<ul>
-							<li><a href="#">Paket 1</a></li>
-							<li><a href="#">Paket 2</a></li>
-							<li><a href="#">Paket 3</a></li>
-							<li>
-								<a href="#">zanemari ovo</a>
-								<ul>
-									<li><a href="#">Utisak1</a></li>
-									<li><a href="#">Utisak2</a></li>
-									<li><a href="#">Veroeros feugiat</a></li>
-									<li><a href="#">Nisl sed aliquam</a></li>
-									<li><a href="#">Dolore adipiscing</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Treba Vam nesto posebno?</a></li>
-						</ul>
-					</li>
-					<li><a href="left-sidebar.html">Utisci</a></li>
-					<li><a href="right-sidebar.html">U medijima</a></li>
-					<li><a href="no-sidebar.html">Kontakt</a></li>
+					<!-- <li class="current"><a href="index.html">Home</a></li> -->
+					<li><a href="#naruci">Naruči katikaturu</a></li>
+					<li><a href="#utisci">Utisci</a></li> <!-- left-sidebar.html -->
+					<li><a href="#umedijima">U medijima</a></li> <!-- right-sidebar.html -->
+					<li><a href="#footer">Kontakt</a></li> <!-- no-sidebar.html -->
 				</ul>
 			</nav>
 
@@ -90,12 +83,7 @@
 						</section>
 					</div>
 				</div>
-				<footer>
-					<ul class="actions">
-						<li><a href="#" class="button large">Naruči Odmah</a></li>
-						<li><a href="#" class="button alt large">Saznaj Više</a></li>
-					</ul>
-				</footer>
+				
 			</section>
 
 		</section>
@@ -106,38 +94,38 @@
 				<div class="row">
 					<div class="col-12">
 
-						<!-- Portfolio -->
-						<section>
+						<!-- Narucite -->
+						<section id="naruci">
 							<header class="major">
 								<h2>Poručite!</h2>
+								<h5>*na više osoba ide popust</h5>
 							</header>
 							<div class="row">
 								<div class="col-4 col-6-medium col-12-small">
 									<section class="box">
 										<a href="#" class="image featured"><img src="images/paket1.jpg" alt="" /></a>
 										<header>
-											<h3>Paket 1</h3>
+											<h3>50 KM</h3>
 										</header>
 										<p>Crno bijela karikatura jedne osobe.</p>
 										<footer>
 											<ul class="actions">
 												<li><a href="paket1.html" class="button alt">Odaberi</a></li>
-												<li><p>50KM</p></li>
 											</ul>
 										</footer>
+										
 									</section>
 								</div>
 								<div class="col-4 col-6-medium col-12-small">
 									<section class="box">
 										<a href="#" class="image featured"><img src="images/paket2.jpg" alt="" /></a>
 										<header>
-											<h3>Paket 2</h3>
+											<h3>70 KM</h3>
 										</header>
 										<p>Karikatura u boji jedne osobe.</p>
 										<footer>
 											<ul class="actions">
 												<li><a href="paket2.html" class="button alt">Odaberi</a></li>
-												<li><p>50KM</p></li>
 											</ul>
 										</footer>
 									</section>
@@ -146,13 +134,12 @@
 									<section class="box">
 										<a href="#" class="image featured"><img src="images/paket3.jpg" alt="" /></a>
 										<header>
-											<h3>Paket 3</h3>
+											<h3>100 KM</h3>
 										</header>
-										<p>Karikatura u boji sa detaljima.</p>
+										<p>Karikatura u boji sa detaljima jedne osobe.</p>
 										<footer>
 											<ul class="actions">
 												<li><a href="paket3.html" class="button alt">Odaberi</a></li>
-												<li><p>50KM</p></li>
 											</ul>
 										</footer>
 									</section>
@@ -162,9 +149,10 @@
 							</div>
 						</section>
 
-						<section>
+						<!-- Utisci -->
+						<section id="utisci">
 							<header class="major">
-								<h2>Utisci</h2>
+								<h2>Utisci:</h2>
 							</header>
 							
 							<section class="panel">
@@ -193,8 +181,8 @@
 					</div>
 					<div class="col-12">
 
-						<!-- Blog -->
-						<section>
+						<!-- U medijima -->
+						<section id="umedijima">
 							<header class="major">
 								<h2>Priča se priča...</h2>
 							</header>
@@ -310,7 +298,7 @@
 							</p>
 							<footer>
 								<ul class="actions">
-									<li><a href="#" class="button">Saznaj više</a></li>
+									<li><a href="paket1.html" class="button">Saznaj više</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -318,16 +306,9 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section>
 							<header>
-								<h2>Česta pitanja ili korisni linkovi?:</h2>
+								<h2> </h2>
 							</header>
-							<ul class="divided">
-								<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-								<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-								<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-								<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-								<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-								<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-							</ul>
+							
 						</section>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">

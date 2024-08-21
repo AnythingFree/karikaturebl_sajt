@@ -1601,6 +1601,26 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+/* Scroll to Top Button */
+	#scrollToTopBtn {
+		display: none; /* Hidden by default */
+		position: fixed; /* Fixed/sticky position */
+		bottom: 20px; /* Place the button at the bottom of the page */
+		right: 30px; /* Place the button 30px from the right */
+		z-index: 99; /* Make sure it does not overlap */
+
+		background-color: #333;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		cursor: pointer;
+		
+	}
+
+	#scrollToTopBtn:hover {
+		background-color: #555;
+	}
 /* Button */
 
 	input[type="button"],
@@ -3903,7 +3923,7 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #5d5d5d;
+					color: #020202;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -3911,6 +3931,7 @@ input, select, textarea {
 					-ms-transition: background-color .25s ease-in-out;
 					transition: background-color .25s ease-in-out;
 					outline: 0;
+					font-weight: 700;
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
@@ -3920,7 +3941,7 @@ input, select, textarea {
 				#nav > ul > li.current > a {
 					background: #d52349;
 					color: #fff !important;
-					font-weight: 700;
+					font-weight: 1000;
 				}
 
 	.dropotron {
@@ -3985,7 +4006,7 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
+			background-color: rgba(34, 30, 31, 0.694);
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
@@ -4705,5 +4726,7 @@ input, select, textarea {
 			#footer {
 				padding: 40px 0 20px 0;
 			}
+
+		
 
 	}
