@@ -1592,6 +1592,12 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
+		.box footer {
+			display: flex;
+			justify-content: center;
+ 			align-items: center;
+		}
+
 		.box footer ul.actions {
 			margin-bottom: 0;
 		}
@@ -4732,3 +4738,121 @@ input, select, textarea {
 		
 
 	}
+
+	/*===============MOJE UBACENO=====================*/
+
+.container-slideshow-form {
+	display: flex;
+    justify-content: space-between; /* Slideshow on the left, form on the right */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Space between slideshow and form */
+    max-width: 1200px; /* Optional: Limit the maximum width */
+    margin: 0 auto; /* Center the container in the viewport */
+}
+
+/*SLIDE SHOW*/
+	* {box-sizing:border-box}
+
+	/* Slideshow container */
+	.slideshow-container {
+	max-width: 500px;
+	position: relative;
+	
+	}
+
+	/* Hide the images by default */
+	.mySlides {
+	display: none;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+	}
+
+
+	/* The dots/bullets/indicators */
+	.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	background-color: #3b3939;
+	}
+
+	/* Fading animation */
+	.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+	}
+
+	/*=== FORM ====*/
+	.form {
+		max-width: 500px;
+		width: 100%; /* Ensures it takes up available space */
+		margin: 0 auto; /* Center the form within its column */
+		text-align: center; /* Center content inside if needed */
+	}
+
+	 /* Style inputs with type="text", select elements and textareas */
+	input[type=text], select, textarea {
+		width: 100%; /* Full width */
+		padding: 12px; /* Some padding */ 
+		border: 1px solid #ccc; /* Gray border */
+		border-radius: 4px; /* Rounded borders */
+		box-sizing: border-box; /* Make sure that padding and width stays in place */
+		margin-top: 6px; /* Add a top margin */
+		margin-bottom: 16px; /* Bottom margin */
+		resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+	}
+  
+  /* Style the submit button with a specific background color etc */
+  	input[type=submit] {
+		background-color: #04AA6D;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  	input[type=submit]:hover {
+		background-color: #45a049;
+	}
+  
+  
