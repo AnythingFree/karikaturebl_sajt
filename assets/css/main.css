@@ -1892,7 +1892,10 @@ input, select, textarea {
 			ul.actions li:first-child {
 				margin-left: 0;
 			}
+	
+	
 
+	
 /* Links */
 
 	ul.links {
@@ -2111,11 +2114,11 @@ input, select, textarea {
 						background: #ea3723;
 					}
 				ul.social li a.fa-instagram {
-					background: #ed6534;
+					background: #d52349;
 				}
 
 					ul.social li a.fa-instagram:hover {
-						background: #e83819;
+						background: #e53359;
 					}
 
 /* Icons */
@@ -4010,7 +4013,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 		#banner header {
@@ -4097,7 +4100,7 @@ input, select, textarea {
 	#main {
 		position: relative;
 		background: #f7f7f7 url("images/bg02.png");
-		padding: 4em 0 4em 0;
+		padding: 0em 0 4em 0;
 	}
 
 		#main:before {
@@ -4868,4 +4871,20 @@ input, select, textarea {
 			width: 100%;
 		}
 	}
+
+	/*===============INSTAGRAM=====================*/
+	.icon.brands.fa-instagram {
+		color: #e1306c; /* Instagram's primary pink color */
+		background: linear-gradient(45deg, #fdc830, #f37335, #e1306c, #833ab4, #515bd4);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 2rem; /* Adjust icon size */
+		text-decoration: none;
+	}
+	.icon.brands.fa-instagram:hover {
+		color: red; /* Adjust hover color if needed */
+		background: none; /* Keep it simple on hover */
+	}
+	
+	
   

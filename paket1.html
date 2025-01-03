@@ -8,6 +8,7 @@
 	<head>
 		<title>KarikatureBL</title>
 		<meta charset="utf-8" />
+		<link rel="icon" href="images/icon.png" type="image/png">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
@@ -15,224 +16,92 @@
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
 
-			<!-- Header -->
-			<section id="header">
-
-				<!-- Logo -->
-				<h1><a href="index.html">KarikatureBL</a></h1>
-
-				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<!-- <li class="current"><a href="index.html">Home</a></li> -->
-						<li><a href="index.html#naruci">Naruči katikaturu</a></li>
-						<li><a href="index.html#utisci">Utisci</a></li> <!-- left-sidebar.html -->
-						<li><a href="#umedijima">U medijima</a></li> 
-						<li><a href="#footer">Kontakt</a>
-						<li><a href="#">Buy me a coffee?</a></li>
-						</li> 
-
-					</ul>
-				</nav>
-
-			
-			</section>
+			<!-- Header Placeholder -->
+			<div id="header-placeholder"></div>
 
 			<!-- Main -->
-				<section id="main">
-					<div class="container-slideshow-form">
+			<section id="main">
+				<div class="container-slideshow-form">
 
-						<!-- Content -->
-                         
-						<!-- Slideshow container -->
-                        <div class="slideshow-container">
+					<!-- Content -->
+						
+					<!-- Slideshow container -->
+					<div class="slideshow-container">
 
-                                <!-- Full-width images with number and caption text -->
-                                <div class="mySlides fade">
-                                <img src="images/paket1.jpg" style="width:100%">
-                                </div>
-                            
-                                <div class="mySlides fade">
-                                <img src="images/paket2.jpg" style="width:100%">
-                                </div>
-                            
-                                <div class="mySlides fade">
-                                <img src="images/paket3.jpg" style="width:100%">
-                                </div>
-                            
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            
-                            <br>
-                            
-                            <!-- The dots/circles -->
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                            </div>
-                        </div>
-
-                        <!-- contact form -->
-                        <div class="form">
-                            <form action="action_page.php">
-                          
-                              <label for="fname">mejl</label>
-                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                                
-                              <label for="fname">broj tel</label>
-                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                          
-                              <label for="lname">ime prezime</label>
-                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          
-                              <label for="country">opis sta zeli</label>
-                              <select id="country" name="country">
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
-                              </select>
-                          
-                              <label for="subject">slike da ubaci</label>
-                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                          
-                              <input type="submit" value="Submit" disabled>
-                          
-                            </form>
-                          </div>
-                        
-
-					</div>
-                    
-				</section>
-
-			<!-- Footer -->
-			<section id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-8 col-12-medium">
-							<section>
-								<header>
-									<h2>Crtanje karikatura uživo:</h2>
-								</header>
-								<ul class="dates">
-									<li>
-										<span class="date">Jan <strong>27</strong></span>
-										<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-										<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat
-											etiam.</p>
-									</li>
-									<li>
-										<span class="date">Jan <strong>23</strong></span>
-										<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-										<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing
-											feugiat lorem.</p>
-									</li>
-									<li>
-										<span class="date">Jan <strong>15</strong></span>
-										<h3><a href="#">Magna tempus lorem feugiat</a></h3>
-										<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit
-											consequat.</p>
-									</li>
-									<li>
-										<span class="date">Jan <strong>12</strong></span>
-										<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
-										<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam
-											consequat.</p>
-									</li>
-									<li>
-										<span class="date">Jan <strong>10</strong></span>
-										<h3><a href="#">Blandit tempus aliquam?</a></h3>
-										<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet
-											dolore.</p>
-									</li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section>
-								<header>
-									<h2>A ko sam ja?</h2>
-								</header>
-								<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-								<p>
-									This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-									<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>
-									It's released for free under
-									the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so
-									feel free to use it for any personal or commercial project &ndash; just don't forget to
-									credit us!
-								</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="no-sidebar.html" class="button">Saznaj više</a></li>
-									</ul>
-								</footer>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section>
-								<header>
-									<h2> </h2>
-								</header>
-								
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section>
-								
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section>
-								<header>
-									<h2>Zaprati me na instagramu:</h2>
-								</header>
-								<ul class="social">
-									<li><a class="icon brands fa-instagram" href="https://www.instagram.com/karikature_bl/"><span class="label">Instagram</span></a>
-									</li>
-									
-								</ul>
-								<ul class="contact">
-									
-									<li>
-										<h3>Mejl</h3>
-										<p><a href="#">someone@untitled.tld</a></p>
-									</li>
-									<li>
-										<h3>Telefon</h3>
-										<p>(800) 000-0000</p>
-									</li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-12">
-
-							<!-- Copyright -->
-							<div id="copyright">
-								<ul class="links">
-									<li>&copy; 2025. All rights reserved.</li><li><a href="https://github.com/AnythingFree/iv_sajt">AF</a></li>
-									
-								</ul>
+							<!-- Full-width images with number and caption text -->
+							<div class="mySlides fade">
+							<img src="images/paket1.jpg" style="width:100%">
 							</div>
-
+						
+							<div class="mySlides fade">
+							<img src="images/paket2.jpg" style="width:100%">
+							</div>
+						
+							<div class="mySlides fade">
+							<img src="images/paket3.jpg" style="width:100%">
+							</div>
+						
+							<!-- Next and previous buttons -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
+						<br>
+						
+						<!-- The dots/circles -->
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
 						</div>
 					</div>
+
+					<!-- contact form -->
+					<div class="form">
+						<form action="action_page.php">
+						
+							<label for="fname">mejl</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your name..">
+							
+							<label for="fname">broj tel</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						
+							<label for="lname">ime prezime</label>
+							<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						
+							<label for="country">opis sta zeli</label>
+							<select id="country" name="country">
+							<option value="australia">Australia</option>
+							<option value="canada">Canada</option>
+							<option value="usa">USA</option>
+							</select>
+						
+							<label for="subject">slike da ubaci</label>
+							<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						
+							<input type="submit" value="Submit" disabled>
+						
+						</form>
+						</div>
+					
+
 				</div>
+				
 			</section>
+
+			<!-- Footer Placeholder -->
+			<div id="footer-placeholder"></div>
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-            <script src="assets/js/slideshow.js"></script>
+		<script src="assets/js/loadHeaderFooter.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/slideshow.js"></script>
 
 	</body>
 </html>
