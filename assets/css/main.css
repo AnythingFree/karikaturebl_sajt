@@ -4100,7 +4100,7 @@ input, select, textarea {
 	#main {
 		position: relative;
 		background: #f7f7f7 url("images/bg02.png");
-		padding: 0em 0 4em 0;
+		padding: 0 0 3em 0;
 	}
 
 		#main:before {
