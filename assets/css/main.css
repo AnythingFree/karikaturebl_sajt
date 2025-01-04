@@ -3946,13 +3946,27 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #f3f3f3;
-				}
-
-				#nav > ul > li.current > a {
 					background: #d52349;
 					color: #fff !important;
 					font-weight: 1000;
+				}
+
+				#nav > ul > li.current > a {
+					background: none;           /* remove background color */
+					color: #d52349;  /* text color (red) */
+					font-weight: 1000;          /* keep or adjust as needed */
+					border: 2px solid #d52349;  /* add a red border */
+					padding: 0.3em 0.6em;       /* add some padding so the border doesn't hug the text too tightly */
+					border-radius: 4px;
+				}
+
+				#nav > ul > li.current:hover > a {
+					background: #d52349;
+					color: #fff !important;
+					font-weight: 1000;
+					border: 2px solid #d52349;
+					padding: 0.3em 0.6em;
+					border-radius: 4px;
 				}
 
 	.dropotron {
@@ -4626,11 +4640,12 @@ input, select, textarea {
 
 			ul.contact li {
 				padding: 0.8em 0 0.8em 7em;
+
 			}
 
-				ul.contact li h3 {
-					top: 0.8em;
-				}
+			ul.contact li h3 {
+				top: 0.8em;
+			}
 
 		/* Dates */
 
