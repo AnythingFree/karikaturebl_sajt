@@ -1,6 +1,12 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/assets/webfonts/MyfontBold-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -18,14 +24,25 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: 'CustomFont';
+
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+	
+
+}
+
+h1 {
+	font-family: 'CustomFont';
+}
 
 body {
 	line-height: 1;
+	
 }
 
 ol, ul {
@@ -1531,6 +1548,7 @@ input, select, textarea {
 
 	header {
 		margin: 0 0 1.5em 0;
+		
 	}
 
 		header > p {
@@ -3916,6 +3934,9 @@ input, select, textarea {
 
 	#nav {
 		margin: 2.5em 0 0 0;
+		font-family: 'CustomFont';
+		word-spacing: 0.2em;
+		
 	}
 
 		#nav > ul {
@@ -3924,7 +3945,7 @@ input, select, textarea {
 
 			#nav > ul > li {
 				display: inline-block;
-				font-style: italic;
+				/*font-style: italic;*/
 				margin: 0 0.35em 0 0.35em;
 			}
 
