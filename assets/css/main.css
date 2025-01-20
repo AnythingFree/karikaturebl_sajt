@@ -4782,14 +4782,16 @@ input, select, textarea {
 
 	/*===============MOJE UBACENO=====================*/
 
+	/*=== paket1 ===*/
 .container-slideshow-form {
 	width: 100%;
-	display: flex;
-    justify-content: space-between; /* Slideshow on the left, form on the right */
-    align-items: center; /* Vertically align items */
+	display: flex; 
+    flex-direction: column; /* Stack items vertically */
+	align-items: center; /* Vertically align items */
     gap: 20px; /* Space between slideshow and form */
     max-width: 1200px; /* Optional: Limit the maximum width */
     margin: 0 auto; /* Center the container in the viewport */
+	padding: 4em 0 0 0;
 }
 
 /*SLIDE SHOW*/
@@ -4797,7 +4799,7 @@ input, select, textarea {
 
 	/* Slideshow container */
 	.slideshow-container {
-	width: 50%;
+	width: 35%;
 	position: relative;
 	
 	}
@@ -4805,6 +4807,7 @@ input, select, textarea {
 	/* Hide the images by default */
 	.mySlides {
 	display: none;
+	
 	}
 
 	/* Next & previous buttons */
@@ -4863,7 +4866,120 @@ input, select, textarea {
 	to {opacity: 1}
 	}
 
-	/*=== FORM ====*/
+
+	/* Form Container */
+	.form-buy-container {
+		width: 100%;
+		max-width: 600px; /* Limit the maximum width */
+		margin: 20px auto; /* Center the form */
+		padding: 20px;
+		border: 1px solid #ccc; /* Add a border */
+		border-radius: 8px; /* Rounded corners */
+		background-color: #f9f9f9; /* Light background */
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	}
+
+	/* Form Elements */
+	.form-buy {
+		display: flex;
+		flex-direction: column;
+		gap: 15px; /* Space between elements */
+	}
+
+	.form-buy label {
+		font-size: 1rem; /* Label text size */
+		color: #333; /* Label color */
+		font-weight: bold;
+	}
+
+	.form-buy input[type="text"],
+	.form-buy textarea {
+		width: 100%; /* Full-width inputs */
+		padding: 10px; /* Internal spacing */
+		font-size: 1rem; /* Input text size */
+		border: 1px solid #ccc; /* Border style */
+		border-radius: 4px; /* Rounded corners */
+		background-color: #fff; /* White background */
+		box-sizing: border-box; /* Ensure consistent sizing */
+	}
+
+	.form-buy input[type="text"]:focus,
+	.form-buy textarea:focus {
+		outline: none; /* Remove default outline */
+		border-color: #007bff; /* Highlighted border color */
+		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow */
+	}
+
+	/* Submit Button */
+	.form-buy input[type="submit"] {
+		font-family: 'CustomFont';
+		width: 100%; /* Full-width button */
+		padding: 10px 15px; /* Button padding */
+		font-size: 1rem; /* Button text size */
+		font-weight: bold;
+		color: #fff; /* White text */
+		background-color: #d52349; /* Primary color */
+		border: none; /* Remove border */
+		border-radius: 4px; /* Rounded corners */
+		cursor: pointer; /* Pointer cursor */
+		transition: background-color 0.3s ease; /* Smooth hover transition */
+	}
+
+	.form-buy input[type="submit"]:hover {
+		background-color: rgb(147, 22, 22); /* Darker shade on hover */
+	}
+
+	/* Responsive Design */
+	@media (max-width: 480px) {
+		.form-buy-container {
+			padding: 15px;
+		}
+
+		.form-buy input[type="submit"] {
+			font-size: 0.9rem; /* Adjust button size */
+		}
+	}
+
+
+	/*=== responsive disagn ===*/
+	@media (max-width: 1200px) {
+		.container-slideshow-form {
+			gap: 15px;
+		}
+	
+		.slideshow-container {
+			width: 40%; /* Increase width for smaller screens */
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.container-slideshow-form {
+			padding: 3em 1em;
+		}
+	
+		.slideshow-container {
+			width: 60%; /* Adjust width for medium-sized screens */
+		}
+	}
+	
+	@media (max-width: 480px) {
+		.container-slideshow-form {
+			padding: 2em 1em;
+		}
+	
+		.slideshow-container {
+			width: 90%; /* Full width for small screens */
+		}
+	
+		.prev,
+		.next {
+			font-size: 16px; /* Smaller buttons for small screens */
+			padding: 10px;
+		}
+	}
+
+
+	/*=== FORM footer ====*/
     .form-container {
         width: 100%;
         padding: 20px;
@@ -4905,8 +5021,9 @@ input, select, textarea {
 		max-height: 100px;	
     }
     
-	
-	
+	.form-container input[type="submit"] {
+		font-family: 'CustomFont';
+	}
 
 	/*===============INSTAGRAM=====================*/
 	.icon.brands.fa-instagram {
@@ -4954,6 +5071,7 @@ input, select, textarea {
 
 #naruci .box {
 	height: 100%; /* Make each column take full width */
+
 }
 
 
