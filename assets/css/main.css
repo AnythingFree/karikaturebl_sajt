@@ -1539,7 +1539,7 @@ input, select, textarea {
 /* Section/Article */
 
 	section, article {
-		margin-bottom: 2.5em;
+		margin-bottom: 0em;
 	}
 
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
@@ -1585,7 +1585,8 @@ input, select, textarea {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		padding: 2.75em 1.75em 2.75em 1.75em;
-	}
+		
+    }
 
 		.box .image.featured {
 			position: relative;
@@ -2678,7 +2679,7 @@ input, select, textarea {
 	}
 
 	.gallery .group .image {
-		height: 12.5rem;
+		height: 7rem;
 	}
 
 }
@@ -4575,7 +4576,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
-
+	
 			body, input, textarea, select {
 				font-size: 11pt;
 			}
@@ -4614,6 +4615,7 @@ input, select, textarea {
 
 			section, article {
 				margin-bottom: 20px;
+			
 			}
 
 			header {
@@ -4919,6 +4921,45 @@ input, select, textarea {
 		color: red; /* Adjust hover color if needed */
 		background: none; /* Keep it simple on hover */
 	}
+
+
+	/* Center the content on smaller devices */
+@media screen and (max-width: 768px) {
+    #naruci .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+    }
+
+    #naruci .col-3 {
+        width: 100%; /* Make each column take full width */
+        margin-bottom: 20px; /* Add space between items */
+    }
+
+    #naruci .box {
+        text-align: center; /* Center text content */
+    }
+
+    #naruci .actions {
+        justify-content: center;
+    }
+}
+
+
+#naruci {
+	padding: 0 0 3em 0;
+	
+}
+
+#naruci .box {
+	height: 100%; /* Make each column take full width */
+}
+
+
+
+
+
 	
 	
   

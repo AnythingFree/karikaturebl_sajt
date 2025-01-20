@@ -14,6 +14,8 @@ async function loadComponent(id, filePath) {
 }
 
 // Load the header and footer
-loadComponent("header-placeholder", "header.html");
+// loadComponent("header-placeholder", "header.html");
 loadComponent("footer-placeholder", "footer.html");
 loadComponent("scrollTopButton-placeholder", "scrollTopButton.html");
+
+
