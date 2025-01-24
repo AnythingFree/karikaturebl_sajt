@@ -1,2 +1,2 @@
 https://karikaturebl.netlify.app/
-design: http://html5up.net 
+design: https://html5up.net/dopetrope
