@@ -4201,12 +4201,19 @@ input, select, textarea {
 			#footer header h2 {
 				font-size: 1.75em;
 			}
+/* Contact text */
+#contact {
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+	margin: 0em 0 0 0;
+}
 
 /* Copyright */
 
 	#copyright {
 		text-align: center;
-		margin: 3em 0 2em 0;
+		margin: 0em 0 0em 0;
 	}
 
 		#copyright ul.links {
@@ -4979,51 +4986,7 @@ input, select, textarea {
 	}
 
 
-	/*=== FORM footer ====*/
-    .form-container {
-        width: 100%;
-        padding: 20px;
-        background: transparent;
-        border-radius: 8px;
-    }
-    
-    .form-container label {
-		color: white;
-        display: block;
-        margin-bottom: 5px;
-        font-size: 14px;
-    }
 	
-    .form-container input[type="text"],
-	.form-container input[type="email"],
-	.form-container textarea {
-		-webkit-text-fill-color: white;
-		border-radius: 0px;
-		background-color: transparent;
-        border: none;
-        border-bottom: 2px solid #706f6f;
-        outline: none;
-        font-size: 20px;
-        padding: 5px 0;
-        margin-bottom: 20px;
-        transition: border-color 0.3s ease-in-out;
-      }
-      
-	.form-container input[type="text"]:focus,
-	.form-container  input[type="email"]:focus,
-	.form-container  textarea:focus {
-		box-shadow: none;
-        border-bottom-color: #007bff;
-	
-    }
-    .form-container textarea {
-        resize: vertical;
-		max-height: 100px;	
-    }
-    
-	.form-container input[type="submit"] {
-		font-family: 'CustomFont';
-	}
 
 	/*===============INSTAGRAM=====================*/
 	.icon.brands.fa-instagram {
@@ -5074,6 +5037,146 @@ input, select, textarea {
 
 }
 
+
+/*=== FORM footer ====*/
+
+/* ======Modal from contact me =============*/
+#contact-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Dim background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Visible State for the Modal */
+#contact-modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #2C2929;
+	padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+	opacity: 1; /* Fully opaque */
+}
+
+.modal-content label {
+	color: white;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content textarea {
+	-webkit-text-fill-color: white;
+	border-radius: 0px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #706f6f;
+	outline: none;
+	font-size: 20px;
+	padding: 5px 0;
+	margin-bottom: 20px;
+	transition: border-color 0.3s ease-in-out;
+  }
+  
+.modal-content input[type="text"]:focus,
+.modal-content  input[type="email"]:focus,
+.modal-content  textarea:focus {
+	box-shadow: none;
+	border-bottom-color: #007bff;
+
+}
+.modal-content textarea {
+	resize: vertical;
+	max-height: 100px;	
+}
+
+.modal-content input[type="submit"] {
+	font-family: 'CustomFont';
+}
+
+/* Close Button */
+.close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+
+/* ===== PAPER PLANE ICON ===============*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #007bff;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #00bfff;
+    }
+    100% {
+        transform: scale(1);
+        color: #007bff;
+    }
+}
+
+@keyframes fly {
+	10% {
+        transform: translate(-10px, 10px);
+    }
+	40% {
+		transform: translate(-25px, 20px);
+		opacity: 1;
+	}
+    100% {
+        transform: translate(100px, -100px);
+		opacity: 0;
+
+      }
+   
+}
+
+
+#toggle-form {
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    color: #007bff;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#toggle-form:hover {
+    animation: none; 
+    color: #a5daeb;
+    transform: translate(-5px, 5px) ;
+	
+}
+
+/* Flying animation */
+#toggle-form.flying {
+    animation: fly 1s forwards; /* Set animation duration to 4s */
+}
 
 
 

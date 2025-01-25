@@ -201,7 +201,42 @@
 		}
 	}
 
-	
+
+	// POP UP FOR PAPER-PLANE CLICK
+	// Select elements
+	const toggleFormIcon = document.getElementById('toggle-form');
+	const contactModal = document.getElementById('contact-modal');
+	const closeModalButton = document.querySelector('.close-button');
+
+	// Show the modal
+	toggleFormIcon.addEventListener('click', () => {
+		toggleFormIcon.classList.add('flying');
+		
+		setTimeout(() => {
+			contactModal.classList.add('show');
+			document.body.style.overflow = 'hidden'; 
+			mybutton.style.display = "none";
+			toggleFormIcon.classList.remove('flying');
+		}, 1000);
+	});
+
+	// Hide the modal
+	closeModalButton.addEventListener('click', () => {
+		contactModal.classList.remove('show');
+		document.body.style.overflow = ''; 
+		mybutton.style.display = "block";
+	});
+
+	// Close the modal when clicking outside the modal content
+	window.addEventListener('click', (e) => {
+		if (e.target === contactModal) {
+			contactModal.classList.remove('show');
+			document.body.style.overflow = ''; 
+			mybutton.style.display = "block";
+		}
+	});
+
+
 		
 
 })(jQuery);
