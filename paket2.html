@@ -29,14 +29,24 @@
 					<ul>
 						<li class="current"><a href="index.html">HOME</a></li>
 						<li><a href="#naruci">NARUČI KARIKATURU</a></li>
-						<li><a href="#utisci">UTISCI</a></li> <!-- left-sidebar.html -->
+						<!--
+						<li><a href="#utisci">UTISCI</a></li>  left-sidebar.html 
 						<li><a href="#umedijima">U MEDIJIMA</a></li> 
+						-->
 						<li><a href="#footer">KONTAKT</a>
-						<li><a href="#">BUY ME A COFFEE?</a></li>
-						</li> 
-
+						<li >
+							<a class="buymecoffee-nav" href="https://www.buymeacoffee.com/KarikatureBL">BUY ME A COFFEE? </a>
+						</li>
+						
 					</ul>
+					
 				</nav>
+
+				<div >
+					<a class="buymecoffee" href="https://www.buymeacoffee.com/KarikatureBL" >
+						<img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=KarikatureBL&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
+					</a>
+				</div>
 
 			</section>
 
@@ -150,13 +160,15 @@
 							<!-- About Me -->
 							<section>
 								<header>
-									<h2>A ko sam ja?</h2>
+									<h2>A ko sam ja? </h2>
 								</header>
+								
 								<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
 								<p>
 									This is <strong>Dopetrope</strong>, a free, fully responsive HTML5 site template by
 									<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>.
 								</p>
+
 								<!-- Contact -->
 								<ul class="contact">
 									<li>
@@ -175,47 +187,49 @@
 									</li>
 								</ul>
 								<footer>
+									<!--
 									<ul class="actions">
 										<li>
 											<a href="biography.html" class="button">Saznaj više</a>
 										</li>    
 									</ul>
+									-->
 								</footer> 
 							</section>
 							
 						</div>
 
-					
-						
-						
-						
-						
 						<!-- Contact Form -->
-						<div class="col-8 col-12-medium">
+						<div class="col-12" id="contact">
 							<header>
-								<h2>Piši mi:</h2>
+								<p>Da te karikatura nasmeši, sada mi piši!
+									<i class="fa-solid fa-paper-plane" id="toggle-form" title="Click"></i>
+								</p>
 							</header>
-						<form method="post" action="#" data-netlify="true" name="contact">
-								<input type="hidden" name="footer-form" value="contact" />
-
-								<div class="form-container">
-									<label for="name"><h3>Ime</h3></label>
-									<input type="text" name="name" id="name" required />
-
-									<label for="email"><h3>E-mail</h3></label>
-									<input type="email" name="email" id="email" required />
-
-									<label for="message"><h3>Poruka</h3></label>
-									<textarea name="message" id="message" rows="4" required></textarea>
-
-									<input type="submit" value="Pošalji">
-								</div>
-
-							</form>
 						</div>
-						<div class="col-2 col-12-medium">
-							
-							
+						
+						
+						<div id="contact-modal" class="modal hidden">
+							<div class="modal-content">
+								<button id="close-modal" class="close-button">&times;</button>
+								
+								<form method="post" action="#" data-netlify="true" name="contact">
+									<input type="hidden" name="footer-form" value="contact" />
+	
+									
+										<label for="name"><h3>Ime</h3></label>
+										<input type="text" name="name" id="name" required />
+	
+										<label for="email"><h3>E-mail</h3></label>
+										<input type="email" name="email" id="email" required />
+	
+										<label for="message"><h3>Poruka</h3></label>
+										<textarea name="message" id="message" rows="4" required></textarea>
+	
+										<input type="submit" value="Pošalji">
+									
+								</form>
+							</div>
 						</div>
 						
 						<div class="col-12">
@@ -230,6 +244,7 @@
 					</div>
 				</div>
 			</section>
+
 		</div>
 
 		<!-- Scripts -->

@@ -5027,9 +5027,14 @@ input, select, textarea {
 
 }
 
+.buymecoffee-nav {
+	display: none;
+  }
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
 	.buymecoffee {
+	  display: none;
 	  top: 5px; /* Adjust positioning for smaller headers */
 	  right: 5px;
 	}
@@ -5040,6 +5045,10 @@ input, select, textarea {
 	  cursor: pointer;
 	  
 	}
+
+	.buymecoffee-nav {
+		display: block;
+	  }
 }
   
  /* ================================
@@ -5141,6 +5150,10 @@ input, select, textarea {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
 	#banner .slideshow-container-banner {	
-		height: 210px; /* Adjust height for smaller screens */
+		height: 150px; /* Adjust height for smaller screens */
+  }
+
+  #banner > header {
+	display: none;
   }
 }
