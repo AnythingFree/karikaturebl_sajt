@@ -3773,138 +3773,6 @@ input, select, textarea {
 
 }
 
-/* Panel (Banner) */
-
-.panel.banner {
-	-moz-align-items: -moz-stretch;
-	-webkit-align-items: -webkit-stretch;
-	-ms-align-items: -ms-stretch;
-	align-items: stretch;
-}
-
-	.panel.banner .content {
-		padding: 3.5rem 3.5rem 2rem 3.5rem ;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		-moz-flex-grow: 0;
-		-webkit-flex-grow: 0;
-		-ms-flex-grow: 0;
-		flex-grow: 0;
-		-moz-flex-shrink: 0;
-		-webkit-flex-shrink: 0;
-		-ms-flex-shrink: 0;
-		flex-shrink: 0;
-	}
-
-		.panel.banner .content > .actions:last-child {
-			margin-bottom: 0;
-		}
-
-	.panel.banner .image {
-		-moz-flex-grow: 0;
-		-webkit-flex-grow: 0;
-		-ms-flex-grow: 0;
-		flex-grow: 0;
-		-moz-flex-shrink: 0;
-		-webkit-flex-shrink: 0;
-		-ms-flex-shrink: 0;
-		flex-shrink: 0;
-		position: relative;
-	}
-
-		.panel.banner .image img {
-			-moz-object-fit: cover;
-			-webkit-object-fit: cover;
-			-ms-object-fit: cover;
-			object-fit: cover;
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-
-	.panel.banner.left {
-		-moz-flex-direction: row;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
-	}
-
-	.panel.banner.right {
-		-moz-flex-direction: row-reverse;
-		-webkit-flex-direction: row-reverse;
-		-ms-flex-direction: row-reverse;
-		flex-direction: row-reverse;
-	}
-
-@media screen and (max-width: 736px) {
-
-	.panel.banner .content {
-		padding: 2.8875rem 1.75rem 1.3875rem 1.75rem ;
-		-moz-flex-basis: 60%;
-		-webkit-flex-basis: 60%;
-		-ms-flex-basis: 60%;
-		flex-basis: 60%;
-	}
-
-		.panel.banner .content > .actions:last-child {
-			margin-bottom: 1.5rem;
-		}
-
-	.panel.banner .image {
-		-moz-flex-basis: 40%;
-		-webkit-flex-basis: 40%;
-		-ms-flex-basis: 40%;
-		flex-basis: 40%;
-	}
-
-}
-
-@media screen and (max-width: 736px) and (orientation: portrait) {
-
-	.panel.banner .content {
-		-moz-flex-basis: auto;
-		-webkit-flex-basis: auto;
-		-ms-flex-basis: auto;
-		flex-basis: auto;
-	}
-
-	.panel.banner .image {
-		-moz-flex-basis: auto;
-		-webkit-flex-basis: auto;
-		-ms-flex-basis: auto;
-		flex-basis: auto;
-		height: 18rem;
-	}
-
-	.panel.banner.left {
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-	}
-
-	.panel.banner.right {
-		-moz-flex-direction: column-reverse;
-		-webkit-flex-direction: column-reverse;
-		-ms-flex-direction: column-reverse;
-		flex-direction: column-reverse;
-	}
-
-}
-
 
 
 /* Page Wrapper */
@@ -4039,40 +3907,7 @@ input, select, textarea {
 				border-bottom-color: rgba(34, 30, 31, 0.98);
 			}
 
-/* Banner */
 
-	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
-		background-position: center center;
-		background-size: auto 100%;
-		background-repeat: no-repeat;
-		text-align: center;
-		position: relative;
-		padding: 8em 0;
-		margin: 0 0 0 0;
-	}
-
-		#banner header {
-			background-color: rgba(34, 30, 31, 0.694);
-			display: inline-block;
-			padding: 2.5em 5em;
-			border-radius: 5px;
-		}
-
-			#banner header h2 {
-				color: #fff;
-				font-weight: 700;
-				font-size: 2.5em;
-				margin: 0 0 0.65em 0;
-			}
-
-			#banner header p {
-				color: #d52349;
-				padding: 0;
-				font-style: normal;
-				margin: 0;
-				font-size: 1.5em;
-			}
 
 /* Intro */
 
@@ -5182,8 +5017,8 @@ input, select, textarea {
 /* Coffee */
 .buymecoffee {
 	position: absolute; /* Position relative to the #header section */
-	top: 10px; /* Distance from the top of the #header */
-	right: 10px; /* Distance from the right side of the #header */
+	top: 20px; /* Distance from the top of the #header */
+	right: 20px; /* Distance from the right side of the #header */
   }
 .buymecoffee img {
 	width: auto; /* Keeps the original aspect ratio */
@@ -5200,24 +5035,112 @@ input, select, textarea {
 	}
   
 	.buymecoffee img {
-	  content: url('https://img.buymeacoffee.com/button-api/?text=&emoji=☕&slug=KarikatureBL&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00');
-	  height: 20px; /* Slightly smaller button on tablets */
+	  content: url('https://img.buymeacoffee.com/button-api/?text= &slug=KarikatureBL&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00');
+	  height: 25px; /* Slightly smaller button on tablets */
+	  cursor: pointer;
+	  
 	}
-  }
+}
   
-@media (max-width: 480px) {
-	#nav .actions {
-	  display: none; /* Hide the actions list */
+ /* ================================
+       Banner Container & Track Styles
+================================ */
+/* Banner */
+
+	#banner {
+		text-align: center;
+		position: relative;
+		padding: 0em 0;
+		margin: 0 0 0 0;
 	}
 
-	.buymecoffee {
-	  content: "asdf"; 
-	  top: 5px; 
-	  right: 5px;
-	}
+		#banner > header {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%); /* center horizontally & vertically */
+			z-index: 2;  /* above the slideshow-container */
+			color: #fff; /* ensure text is readable against background images */
+			text-align: center;
+			
+			background-color: rgba(34, 30, 31, 0.694);
+			display: center;
+			padding: 2.5em 5em;
+			border-radius: 5px;
+			
+		}
+
+			#banner header h2 {
+				color: #fff;
+				font-weight: 700;
+				font-size: 2.5em;
+				margin: 0 0 0.65em 0;
+			}
+
+			#banner header p {
+				color: #d52349;
+				padding: 0;
+				font-style: normal;
+				margin: 0;
+				font-size: 1.5em;
+			}
   
-	.buymecoffee img {
-	  content: url('https://img.buymeacoffee.com/button-api/?text= &slug=KarikatureBL&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00');
-	  height: 21px; /* Smaller button on mobile */
-	}
+	  .slideshow-container-banner {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 500px;
+		z-index: 1; 
+		overflow: hidden;
+		
+	  }
+  
+	  /* The track that holds all slides side-by-side */
+	  .slides-track-banner {
+		display: flex;              /* put slides side-by-side (train cars) */
+		width: 100%;                /* track starts as 100%, but it’ll stretch */
+		transition: transform 1s ease-in-out; 
+		/* This transition makes the track slide smoothly over 1s  */
+	  }
+  
+	  /* Each “car” (slide) takes up the full width of the container */
+	  .slide-banner {
+		min-width: 100%;   /* 100% of the .slideshow-container width */
+		height: 100%;
+		box-sizing: border-box;
+		position: relative; /* so we can place captions, etc. */
+  
+		/* Optional: just centering the image */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff; 
+		/* a fallback background, if images aren't loaded or for placeholders */
+	  }
+  
+	  .slide-banner img {
+		width: 100%;
+		height: auto; 
+		display: block;
+		object-fit: cover;
+		object-position: center;
+	  }
+  
+	  /* Optional caption styling */
+	  .caption-banner {
+		position: absolute;
+		bottom: 16px;
+		left: 16px;
+		color: #fff;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 8px 16px;
+		font-size: 18px;
+		border-radius: 4px;
+	  }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+	#banner .slideshow-container-banner {	
+		height: 210px; /* Adjust height for smaller screens */
   }
+}
