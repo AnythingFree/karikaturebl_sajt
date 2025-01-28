@@ -5157,3 +5157,11 @@ input, select, textarea {
 	display: none;
   }
 }
+
+.profile_pic {
+	width: 50%;
+	height: 50%;
+	border-radius: 25%;
+	margin: 0 auto;
+	display: block;
+}
