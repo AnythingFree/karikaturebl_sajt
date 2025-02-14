@@ -4056,6 +4056,7 @@ input, select, textarea {
 		position: relative;
 		padding: 8em 0;
 		margin: 0 0 0 0;
+		font-size: 25px;
 	}
 
 		#banner header {
@@ -5037,6 +5038,10 @@ input, select, textarea {
 #naruci {
 	padding: 0 0 3em 0;
 	
+	
+}
+#naruci h5{
+	font-size: 25px;
 }
 
 #naruci .box {
@@ -5185,5 +5190,12 @@ input, select, textarea {
     animation: fly 1s forwards; /* Set animation duration to 4s */
 }
 
+.logo_header img {
+    width: 600px;
+    height: auto; /* This maintains the aspect ratio */
+}
 
+.image_featured {
+	size: 25%;
+}
 
