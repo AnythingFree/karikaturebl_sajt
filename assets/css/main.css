@@ -1978,7 +1978,7 @@ input, select, textarea {
 		ul.dates li {
 			position: relative;
 			border-top: solid 1px #ddd;
-			padding: 1.3em 0 1.3em 6.75em;
+			padding: 3em 0 1.3em 6.75em;
 		}
 
 		ul.dates .date {
@@ -2016,10 +2016,6 @@ input, select, textarea {
 			font-size: 1.1em;
 		}
 
-		ul.dates p {
-			margin: 0;
-		}
-
 		ul.dates li:first-child {
 			border-top: 0;
 			padding-top: 0;
@@ -2028,6 +2024,10 @@ input, select, textarea {
 			ul.dates li:first-child .date {
 				top: 0;
 			}
+		
+
+
+			
 
 /* Divided */
 
@@ -2132,13 +2132,9 @@ input, select, textarea {
 					ul.social li a.fa-google-plus:hover {
 						background: #ea3723;
 					}
-				ul.social li a.fa-instagram {
-					background: #d52349;
-				}
+				
 
-					ul.social li a.fa-instagram:hover {
-						background: #e53359;
-					}
+					
 
 /* Icons */
 
@@ -4048,7 +4044,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/kastel.jpg");
+		background: #CCE8F4 url("../../images/pic01.jpg");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -5001,9 +4997,10 @@ input, select, textarea {
 		text-decoration: none;
 	}
 	.icon.brands.fa-instagram:hover {
-		color: red; /* Adjust hover color if needed */
-		background: none; /* Keep it simple on hover */
+		filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.6)); /* Glow effect */
 	}
+	
+	
 
 
 	/* Center the content on smaller devices */
@@ -5190,21 +5187,30 @@ input, select, textarea {
     height: auto; /* This maintains the aspect ratio */
 }
 
-#opis_procesa {
+.opis_procesa {
+	background-color: #fff;
 	width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 
-.image_featured {
-    width: 90%;
+.opis_procesa .image_featured {
+    width: 100%;
     height: auto;
 }
 
 .biography-short {
 	text-align: center;
+}
+
+.center_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
