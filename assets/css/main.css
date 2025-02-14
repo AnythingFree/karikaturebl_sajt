@@ -5188,7 +5188,6 @@ input, select, textarea {
 }
 
 .opis_procesa {
-	background-color: #fff;
 	width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
@@ -5213,6 +5212,10 @@ input, select, textarea {
     text-align: center;
 }
 
-
-
-
+.profile_pic {
+	width: 50%;
+	height: 50%;
+	border-radius: 25%;
+	margin: 0 auto;
+	display: block;
+}
