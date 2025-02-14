@@ -5227,3 +5227,37 @@ input, select, textarea {
 	margin: 0 auto;
 	display: block;
 }
+
+/* Default styling for larger screens */
+#naruci h2 {
+    font-size: 2.5rem; /* Adjust based on design */
+    text-align: center;
+}
+
+#naruci h5 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    #naruci h2 {
+        font-size: 2rem;
+    }
+
+    #naruci h5 {
+        font-size: 1rem;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 480px) {
+    #naruci h2 {
+        font-size: 1.8rem;
+    }
+
+    #naruci h5 {
+        font-size: 0.9rem;
+    }
+}
