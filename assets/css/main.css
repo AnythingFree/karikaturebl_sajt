@@ -5183,16 +5183,24 @@ input, select, textarea {
 }
 
 .logo_header img {
-    width: 600px;
+	width: 100%; /* Make the image scale to 100% of its container */
+    max-width: 600px;
     height: auto; /* This maintains the aspect ratio */
 }
 
 .opis_procesa {
-	width: 100%;
+	max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     gap: 20px;
     justify-content: center;
+}
+
+/* Make it a single column on smaller screens */
+@media (max-width: 768px) {
+    .opis_procesa {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
 }
 
 .opis_procesa .image_featured {
