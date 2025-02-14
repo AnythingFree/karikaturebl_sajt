@@ -3991,6 +3991,12 @@ input, select, textarea {
 					border-radius: 4px;
 				}
 
+				#nav > ul > li.buymecoffee:hover > a {
+					background: #40dca5;
+					color: #fff !important;
+					font-weight: 1000;
+				}
+
 	.dropotron {
 		border-radius: 5px;
 		background-color: #252122;
@@ -5179,45 +5185,5 @@ input, select, textarea {
     animation: fly 1s forwards; /* Set animation duration to 4s */
 }
 
-/* Coffee */
-.buymecoffee {
-	position: absolute; /* Position relative to the #header section */
-	top: 10px; /* Distance from the top of the #header */
-	right: 10px; /* Distance from the right side of the #header */
-  }
-.buymecoffee img {
-	width: auto; /* Keeps the original aspect ratio */
-	height: 45px; /* Adjust as needed for your design */
-	cursor: pointer; /* Makes the button clickable */
 
-}
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-	.buymecoffee {
-	  top: 5px; /* Adjust positioning for smaller headers */
-	  right: 5px;
-	}
-  
-	.buymecoffee img {
-	  content: url('https://img.buymeacoffee.com/button-api/?text=&emoji=☕&slug=KarikatureBL&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00');
-	  height: 20px; /* Slightly smaller button on tablets */
-	}
-  }
-  
-@media (max-width: 480px) {
-	#nav .actions {
-	  display: none; /* Hide the actions list */
-	}
-
-	.buymecoffee {
-	  content: "asdf"; 
-	  top: 5px; 
-	  right: 5px;
-	}
-  
-	.buymecoffee img {
-	  content: url('https://img.buymeacoffee.com/button-api/?text= &slug=KarikatureBL&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00');
-	  height: 21px; /* Smaller button on mobile */
-	}
-  }
