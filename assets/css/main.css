@@ -4048,7 +4048,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../images/kastel.jpg");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -4059,22 +4059,17 @@ input, select, textarea {
 		font-size: 25px;
 	}
 
-		#banner header {
-			background-color: rgba(34, 30, 31, 0.694);
-			display: inline-block;
-			padding: 2.5em 5em;
-			border-radius: 5px;
-		}
+		
 
 			#banner header h2 {
-				color: #fff;
+				color: #000;
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
 			}
 
 			#banner header p {
-				color: #d52349;
+				color: #fff;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
@@ -5195,7 +5190,23 @@ input, select, textarea {
     height: auto; /* This maintains the aspect ratio */
 }
 
-.image_featured {
-	size: 25%;
+#opis_procesa {
+	width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 10px;
+    justify-content: center;
 }
+
+.image_featured {
+    width: 90%;
+    height: auto;
+}
+
+.biography-short {
+	text-align: center;
+}
+
+
+
 
