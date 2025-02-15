@@ -1599,6 +1599,10 @@ input, select, textarea {
 		.box.post header {
 			padding-top: 1em;
 			margin: 0 0 2em 0;
+			
+			display: flex;
+			justify-content: center;
+ 			align-items: center;
 		}
 
 		.box.post h2 {
@@ -5056,6 +5060,11 @@ input, select, textarea {
 
 }
 
+#umedijima {
+	padding: 0 0 3em 0;	
+}
+
+
 
 /*=== FORM footer ====*/
 
@@ -5275,6 +5284,20 @@ input, select, textarea {
     #naruci h5 {
         font-size: 0.9rem;
     }
+}
+
+.prica_slika img {
+    width: 100%; /* Ensures image takes full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 200px; /* Adjust as needed */
+    display: block; /* Removes extra spacing */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* If you want the container to limit image scaling */
+.prica_slika {
+    max-width: 100%;
+    text-align: center; /* Ensures alignment */
 }
 
 
