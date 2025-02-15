@@ -85,22 +85,25 @@
 							<input type="hidden" name="buyer-form" value="packet-buyer" />
 		
 							<div class="form-buy">
-							<label for="email">Mejl:</label>
-							<input type="text" id="email" name="email" placeholder="example@example.com">
+								<label for="email">Mejl:</label>
+								<input type="text" id="email" name="email" placeholder="example@example.com">
+								
+								<label for="fname">Broj telefona:</label>
+								<input type="text" id="number" name="broj tel" placeholder="065-123-456">
 							
-							<label for="fname">Broj telefona:</label>
-							<input type="text" id="number" name="broj tel" placeholder="065-123-456">
-						
-							<label for="lname">Ime i prezime:</label>
-							<input type="text" id="name_surname" name="ime prezime" placeholder="Ana Anić">
-						
-							<label for="description">Opis šta želite:</label>
-							<input type="text" id="description" name="opis" placeholder="Karikatura mene i moga psa sa jaknom...">
-						
-							<label for="slike">Ubacite slike:</label>
-							<input type="file" id="slike" name="slike" accept="image/*">
+								<label for="lname">Ime i prezime:</label>
+								<input type="text" id="name_surname" name="ime prezime" placeholder="Ana Anić">
 							
-							<input type="submit" value="Submit">
+								<label for="description">Opis šta želite:</label>
+								<input type="text" id="description" name="opis" placeholder="Karikatura mene i moga psa sa jaknom...">
+							
+								<label for="datum">Datum kada želite da preuzmete:</label>
+								<input type="date" id="datum" name="datum">
+								
+								<label for="slike">Ubacite slike:</label>
+								<input type="file" id="slike" name="slike" accept="image/*">
+
+								<input type="submit" value="Pošalji">
 							</div>
 						</form>
 					</div>
@@ -179,38 +182,6 @@
 							
 						</div>
 
-						<!-- Contact Form -->
-						<div class="col-12" id="contact">
-							<header>
-								<p>Da te karikatura nasmeši, sada mi piši!
-									<i class="fa-solid fa-paper-plane" id="toggle-form" title="Click"></i>
-								</p>
-							</header>
-						</div>
-						
-						
-						<div id="contact-modal" class="modal hidden">
-							<div class="modal-content">
-								<button id="close-modal" class="close-button">&times;</button>
-								
-								<form method="post" action="#" data-netlify="true" name="contact">
-									<input type="hidden" name="footer-form" value="contact" />
-	
-									
-										<label for="name"><h3>Ime</h3></label>
-										<input type="text" name="name" id="name" required />
-	
-										<label for="email"><h3>E-mail</h3></label>
-										<input type="email" name="email" id="email" required />
-	
-										<label for="message"><h3>Poruka</h3></label>
-										<textarea name="message" id="message" rows="4" required></textarea>
-	
-										<input type="submit" value="Pošalji">
-									
-								</form>
-							</div>
-						</div>
 						
 						<div class="col-12">
 							<!-- Copyright -->
