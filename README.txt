@@ -1,3 +1,3 @@
 portfolio site
 https://karikaturebl.netlify.app/
-design: https://html5up.net/dopetrope
+templ: https://html5up.net/dopetrope
