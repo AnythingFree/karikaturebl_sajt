@@ -86,6 +86,8 @@
 							<input type="hidden" name="buyer-form" value="packet-buyer" />
 		
 							<div class="form-buy">
+							<input type="hidden" name="paket:" value="paket3">
+
 							<label for="email">Mejl:</label>
 							<input type="text" id="email" name="email" placeholder="example@example.com">
 							
@@ -103,6 +105,15 @@
 							
 							<label for="slike">Ubacite slike:</label>
 							<input type="file" id="slike" name="slike" accept="image/*">
+
+							<label for="slike">Da li želite uslugu uramljivanja?</label>
+								<div class="radio-container">
+									<input type="radio" id="da" name="choice" value="da">
+									<label for="da">Da</label>
+					
+									<input type="radio" id="ne" name="choice" value="ne">
+									<label for="ne">Ne</label>
+								</div>
 
 							<input type="submit" value="Pošalji">
 							</div>
@@ -125,10 +136,7 @@
 									<h2>Crtanje karikatura uživo:</h2>
 								</header>
 								<ul class="dates">
-									<li>
-										<span class="date">Mart <strong>13</strong></span>
-										<h3>Umjetničko-humanitarni događaj "Umjetnost koja nikome ne treba", Dom Omladine</h3>
-									</li>
+									
 									<li>
 										<span class="date">Apr <strong>26</strong></span>
 										<h3>Svadbeni salon "FELIKITAS"</h3>	

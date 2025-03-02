@@ -4898,6 +4898,8 @@ input, select, textarea {
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 	}
 
+	
+
 	/* Form Elements */
 	.form-buy {
 		display: flex;
@@ -4927,6 +4929,21 @@ input, select, textarea {
 		outline: none; /* Remove default outline */
 		border-color: #007bff; /* Highlighted border color */
 		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow */
+	}
+
+	.form-buy input[type="radio"] {
+		appearance: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.radio-container {
+		display: flex;
+		align-items: center;
+		gap: 10px; /* Adds spacing between options */
+	}
+	.radio-container input {
+		margin: 0;
 	}
 
 	/* Submit Button */
