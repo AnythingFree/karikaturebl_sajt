@@ -4983,7 +4983,7 @@ input, select, textarea {
 	}
 
 
-	/*=== responsive disagn ===*/
+	/*=== responsive design ===*/
 	@media (max-width: 1200px) {
 		.container-slideshow-form {
 			gap: 15px;
@@ -5024,18 +5024,21 @@ input, select, textarea {
 	
 
 	/*===============INSTAGRAM=====================*/
+	/*
 	.icon.brands.fa-instagram {
-		color: #e1306c; /* Instagram's primary pink color */
+		color: #e1306c; 
 		background: linear-gradient(45deg, #fdc830, #f37335, #e1306c, #833ab4, #515bd4);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		font-size: 2rem; /* Adjust icon size */
+		font-size: 2rem;
 		text-decoration: none;
 	}
-	.icon.brands.fa-instagram:hover {
-		filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.6)); /* Glow effect */
-	}
+
 	
+	.icon.brands.fa-instagram:hover {
+		filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.6)); 
+	}
+	*/
 	
 
 
