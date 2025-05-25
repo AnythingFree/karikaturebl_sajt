@@ -3982,7 +3982,7 @@ input, select, textarea {
 					color: #d52349;  /* text color (red) */
 					font-weight: 1000;          /* keep or adjust as needed */
 					border: 2px solid #d52349;  /* add a red border */
-					padding: 0.3em 0.6em;       /* add some padding so the border doesn't hug the text too tightly */
+					padding: 0.5em 1.1em 0.5em 1.1em;       /* add some padding so the border doesn't hug the text too tightly */
 					border-radius: 4px;
 				}
 
@@ -3991,7 +3991,6 @@ input, select, textarea {
 					color: #fff !important;
 					font-weight: 1000;
 					border: 2px solid #d52349;
-					padding: 0.3em 0.6em;
 					border-radius: 4px;
 				}
 
@@ -5076,6 +5075,11 @@ input, select, textarea {
 
 #umedijima {
 	padding: 0 0 3em 0;	
+}
+
+#umedijima h2 {
+    font-size: 2.5rem; /* Adjust based on design */
+    text-align: center;
 }
 
 
