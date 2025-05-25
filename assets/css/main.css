@@ -5222,7 +5222,7 @@ input, select, textarea {
 
 .logo_header img {
 	width: 100%; /* Make the image scale to 100% of its container */
-    max-width: 600px;
+    max-width: 300px;
     height: auto; /* This maintains the aspect ratio */
 }
 
