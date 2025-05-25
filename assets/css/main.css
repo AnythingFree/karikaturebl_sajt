@@ -5024,23 +5024,17 @@ input, select, textarea {
 	
 
 	/*===============INSTAGRAM=====================*/
-	/*
+	
 	.icon.brands.fa-instagram {
-		color: #e1306c; 
-		background: linear-gradient(45deg, #fdc830, #f37335, #e1306c, #833ab4, #515bd4);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		display: inline-block;
 		font-size: 2rem;
 		text-decoration: none;
 	}
 
-	
 	.icon.brands.fa-instagram:hover {
-		filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.6)); 
+		transform: scale(1.2);
 	}
-	*/
 	
-
 
 	/* Center the content on smaller devices */
 @media screen and (max-width: 768px) {
