@@ -4000,6 +4000,8 @@ input, select, textarea {
 					font-weight: 1000;
 				}
 
+
+
 	.dropotron {
 		border-radius: 5px;
 		background-color: #252122;
@@ -5028,9 +5030,22 @@ input, select, textarea {
 		display: inline-block;
 		font-size: 2rem;
 		text-decoration: none;
+		 margin-right: 15px; 
 	}
 
 	.icon.brands.fa-instagram:hover {
+		transform: scale(1.2);
+	}
+
+	/*===============TikTok=====================*/
+	
+	.icon.brands.fa-tiktok {
+		display: inline-block;
+		font-size: 2rem;
+		text-decoration: none;
+	}
+
+	.icon.brands.fa-tiktok:hover {
 		transform: scale(1.2);
 	}
 	
@@ -5051,6 +5066,7 @@ input, select, textarea {
 
     #naruci .box {
         text-align: center; /* Center text content */
+		
     }
 
     #naruci .actions {
@@ -5069,13 +5085,31 @@ input, select, textarea {
 }
 
 #naruci .box {
-	height: 100%; /* Make each column take full width */
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;  /* makes it obvious it's clickable */
 }
+
+#naruci .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
 
 #umedijima {
 	padding: 0 0 3em 0;	
 }
+
+#umedijima .box {
+	height: 90%;
+    max-width: 300px; /* adjust size */
+    margin: 0 auto 20px auto; /* center and add spacing */
+}
+#umedijima .box img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 
