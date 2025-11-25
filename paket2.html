@@ -189,14 +189,35 @@
 
 		<!-- JS to load header and footer -->
 		<script>
+			// Load header
 			async function loadHTML(id, url) {
 				const response = await fetch(url);
 				const html = await response.text();
 				document.getElementById(id).innerHTML = html;
+
+				// Now header exists in DOM, attach menu highlighting
+				if (id === 'header'){
+					highlightCurrentMenu();
+				}
 			}
 
-			loadHTML('header', 'header.html');
 			loadHTML('footer', 'footer.html');
+			loadHTML('header', 'header.html');
+			
+
+			// Function to highlight current menu
+			function highlightCurrentMenu() {
+				const menuLinks = document.querySelectorAll('#header ul li a');
+
+				menuLinks.forEach(link => {
+					const linkPage = link.getAttribute('href').split("/").pop();
+					if (linkPage.startsWith('paket')) {
+					link.parentElement.classList.add('current');
+					} else {
+					link.parentElement.classList.remove('current');
+					}
+				});
+			}
 		</script>
 
 
