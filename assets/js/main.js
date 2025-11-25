@@ -203,37 +203,37 @@
 
 
 	// POP UP FOR PAPER-PLANE CLICK
-	// Select elements
-	const toggleFormIcon = document.getElementById('toggle-form');
-	const contactModal = document.getElementById('contact-modal');
-	const closeModalButton = document.querySelector('.close-button');
+	document.addEventListener('click', function(e) {
+		const contactModal = document.getElementById('contact-modal');
+		const toggleFormIcon = document.getElementById('toggle-form');
+		const mybutton = document.getElementById('mybutton'); // if you have this button
 
-	// Show the modal
-	toggleFormIcon.addEventListener('click', () => {
-		toggleFormIcon.classList.add('flying');
-		
-		setTimeout(() => {
-			contactModal.classList.add('show');
-			document.body.style.overflow = 'hidden'; 
-			mybutton.style.display = "none";
-			toggleFormIcon.classList.remove('flying');
-		}, 1000);
-	});
+		// Open modal when clicking paper plane
+		if (e.target.id === 'toggle-form') {
+			toggleFormIcon.classList.add('flying');
 
-	// Hide the modal
-	closeModalButton.addEventListener('click', () => {
-		contactModal.classList.remove('show');
-		document.body.style.overflow = ''; 
-		mybutton.style.display = "block";
-	});
+			setTimeout(() => {
+				contactModal.classList.add('show');
+				document.body.style.overflow = 'hidden';
+				if (mybutton) mybutton.style.display = 'none';
+				toggleFormIcon.classList.remove('flying');
+			}, 1000);
+		}
 
-	// Close the modal when clicking outside the modal content
-	window.addEventListener('click', (e) => {
+		// Close modal when clicking close button
+		if (e.target.classList.contains('close-button')) {
+			contactModal.classList.remove('show');
+			document.body.style.overflow = '';
+			if (mybutton) mybutton.style.display = 'block';
+		}
+
+		// Close modal when clicking outside modal content
 		if (e.target === contactModal) {
 			contactModal.classList.remove('show');
-			document.body.style.overflow = ''; 
-			mybutton.style.display = "block";
+			document.body.style.overflow = '';
+			if (mybutton) mybutton.style.display = 'block';
 		}
-	});
+});
+
 
 })(jQuery);
