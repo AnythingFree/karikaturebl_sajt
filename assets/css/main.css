@@ -4052,39 +4052,34 @@ input, select, textarea {
 
 /* Banner */
 
-	#banner {
-		background: #CCE8F4 url("../../images/BANER.JPG");
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		text-align: center;
-		position: relative;
-		padding: 8em 0;
-		margin: 0 0 0 0;
-		font-size: 25px;
-	}
+#banner {
+    width: 100%;
+    height: 60vh;          /* height of the lane */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;    /* vertically center images in lane */
+}
 
-		#banner header {
-			background-color: rgba(37, 34, 56, 0.6);
-			display: inline-block;
-			padding: 2em 1.5em;
-			border-radius: 20px;
-		}
+.slider-track {
+    display: flex;
+    width: max-content;     
+    animation: scroll 25s linear infinite;
+}
 
-			#banner header h2 {
-				color: #000;
-				font-weight: 700;
-				font-size: 2.5em;
-				margin: 0 0 0.65em 0;
-			}
+.slider-track img {
+    height: 60vh;          /* smaller than lane height */
+    flex-shrink: 0;         /* don’t shrink */
+    margin-right: 0;     /* spacing between images */
+    object-fit: contain;    /* make sure image keeps aspect ratio */
+}
 
-			#banner header p {
-				color: #fff;
-				padding: 0;
-				font-style: normal;
-				margin: 0;
-				font-size: 1.5em;
-			}
+/* scroll animation */
+@keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* move left by half the track */
+}
+
 
 /* Intro */
 
