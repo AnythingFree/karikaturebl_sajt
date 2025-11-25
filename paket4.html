@@ -9,6 +9,10 @@
 	</head>
 
 	<body class="no-sidebar is-preload">
+		<div id="loading">
+			<div class="spinner"></div>
+		</div>
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -190,6 +194,8 @@
 		<script>
 			// Load header
 			async function loadHTML(id, url) {
+				loading.style.display = 'flex'; // show loader
+			
 				const response = await fetch(url);
 				const html = await response.text();
 				document.getElementById(id).innerHTML = html;
@@ -198,6 +204,8 @@
 				if (id === 'header'){
 					highlightCurrentMenu();
 				}
+
+				loading.style.display = 'none'; // hide loader after content is loaded
 			}
 
 			loadHTML('footer', 'footer.html');
