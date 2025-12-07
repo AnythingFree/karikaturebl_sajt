@@ -1,233 +1,88 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>KarikatureBL</title>
-		<meta charset="utf-8" />
-		<link rel="icon" href="images/header/logo.ico" type="image/x-icon">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	</head>
+<div class="container-slideshow-form">
 
-	<body class="no-sidebar is-preload">
-		<div id="loading">
-			<div class="spinner"></div>
-		</div>
+	<!-- Content -->
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+			<img src="images/paket1/1.jpeg" style="width:100%">
+			</div>
 		
-		<div id="page-wrapper">
+			<div class="mySlides fade">
+			<img src="images/paket1/2.jpeg" style="width:100%">
+			</div>
 
-			<!-- Header -->
-			<section id="header"></section>
+			<div class="mySlides fade">
+			<img src="images/paket1/3.jpeg" style="width:100%">
+			</div>
 
-			<!-- Main -->
-			<section id="main">
+			<div class="mySlides fade">
+			<img src="images/paket1/4.jpeg" style="width:100%">
+			</div>
 
-				<header class="major">
-					<h2>Paket 1</h2>		
-				</header>
-
-				<div class="container-slideshow-form">
-
-					<!-- Content -->
-					<!-- Slideshow container -->
-					<div class="slideshow-container">
-
-							<!-- Full-width images with number and caption text -->
-							<div class="mySlides fade">
-							<img src="images/paket1/1.jpeg" style="width:100%">
-							</div>
-						
-							<div class="mySlides fade">
-							<img src="images/paket1/2.jpeg" style="width:100%">
-							</div>
-
-							<div class="mySlides fade">
-							<img src="images/paket1/3.jpeg" style="width:100%">
-							</div>
-
-							<div class="mySlides fade">
-							<img src="images/paket1/4.jpeg" style="width:100%">
-							</div>
-
-							<div class="mySlides fade">
-							<img src="images/paket1/5.jpeg" style="width:100%">
-							</div>
-						
-							<!-- Next and previous buttons -->
-							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlides(1)">&#10095;</a>
-						
-						<br>
-						
-						<!-- The dots/circles -->
-						<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
-							<span class="dot" onclick="currentSlide(3)"></span>
-							<span class="dot" onclick="currentSlide(4)"></span>
-							<span class="dot" onclick="currentSlide(5)"></span>
-						</div>
-					</div>
-
-					<!-- contact form -->
-					<div class="form-buy-container">
-						<form method="post" id="packet-buyer" action="/thank-you.html" data-netlify="true" name="packet-buyer">
-							<input type="hidden" name="buyer-form" value="packet-buyer" />
+			<div class="mySlides fade">
+			<img src="images/paket1/5.jpeg" style="width:100%">
+			</div>
 		
-							<div class="form-buy">
-								<input type="hidden" name="paket:" value="paket1">
-
-								<label for="email">Mejl:</label>
-								<input type="text" id="email" name="email" placeholder="example@example.com">
-								
-								<label for="fname">Broj telefona:</label>
-								<input type="text" id="number" name="broj tel" placeholder="065-123-456">
-							
-								<label for="lname">Ime i prezime:</label>
-								<input type="text" id="name_surname" name="ime prezime" placeholder="Ana Anić">
-							
-								<label for="description">Opis šta želite:</label>
-								<input type="text" id="description" name="opis" placeholder="Karikatura mene i moga psa sa jaknom...">
-							
-								<label for="datum">Datum kada želite da preuzmete:</label>
-								<input type="date" id="datum" name="datum">
-								
-								<label for="slike">Ubacite slike:</label>
-								<input type="file" id="slike" name="slike" accept="image/*">
-								
-								<label>Da li želite uslugu uramljivanja?</label>
-								<div class="radio-container">
-									<input type="radio" id="da" name="uramljivanje" value="da">
-									<label for="da">Da</label>
-					
-									<input type="radio" id="ne" name="uramljivanje" value="ne" checked>
-									<label for="ne">Ne</label>
-								</div>
-
-								<input type="submit" value="Pošalji">
-							</div>
-						</form>
-					</div>
-
-
-				</div>
-
-				<header class="major">
-					<h2>Svi paketi</h2>		
-				</header>
-
-				<!-- Narucite -->
-				<div class="container">
-				<div class="row">
-				<div class="col-12">
-					<section id="naruci">
-						<div class="row">
-							<div class="col-3 col-8-medium col-16-small" >
-								<section class="box" onclick="window.location='paket1.html';">
-									<a class="image featured"><img src="images/paket1.jpg" alt="" /></a>
-									<header class="center_header">
-										<h3>Paket 1</h3>
-									</header>
-								</section>
-								
-							</div>
-							<div class="col-3 col-8-medium col-16-small">
-								<section class="box" onclick="window.location='paket2.html';">
-									<a class="image featured"><img src="images/paket2.jpg" alt="" /></a>
-									<header class="center_header">
-										<h3>Paket 2</h3>
-									</header>
-								</section>
-							</div>
-							<div class="col-3 col-8-medium col-16-small">
-								<section class="box" onclick="window.location='paket3.html';">
-									<a class="image featured"><img src="images/paket3.jpg" alt="" /></a>
-									<header class="center_header">
-										<h3>Paket 3</h3>
-									</header>
-								</section>
-							</div>
-							<div class="col-3 col-8-medium col-16-small">
-								<section class="box" onclick="window.location='paket4.html';">
-									<a class="image featured"><img src="images/svadbeni_paket/1A .JPG" alt="" /></a>
-									<header class="center_header">
-										<h3>150 KM/h</h3>
-									</header>
-									<p>Crtanje karikatura UŽIVO na Vašim događajima.</p>
-									<footer>
-										<!--
-										<ul class="actions">
-											<li><a href="paket4.html" class="button alt">Odaberi</a></li>
-										</ul>
-										-->
-									</footer>
-								</section>
-							</div>
-							
-							
-						</div>
-					</section>
-				</div>
-				</div>
-				</div>
-
-				
-			</section>
-
-			<!-- Footer -->
-			<section id="footer"></section>
-
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<br>
+		
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
 		</div>
+	</div>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+	<!-- contact form -->
+	<div class="form-buy-container">
+		<form method="post" id="packet-buyer" action="/thank-you.html" data-netlify="true" name="packet-buyer">
+			<header class="major">
+				<h2>Paket 1</h2>		
+			</header>
+			<input type="hidden" name="buyer-form" value="packet-buyer" />
 
+			<div class="form-buy">
+				<input type="hidden" name="paket:" value="paket1">
 
-		<script src="assets/js/slideshow.js"></script>
-
-		<!-- JS to load header and footer -->
-		<script>
-			// Load header
-			async function loadHTML(id, url) {
-				loading.style.display = 'flex'; // show loader
-			
-				const response = await fetch(url);
-				const html = await response.text();
-				document.getElementById(id).innerHTML = html;
-
-				// Now header exists in DOM, attach menu highlighting
-				if (id === 'header'){
-					highlightCurrentMenu();
-				}
+				<label for="email">Mejl:</label>
+				<input type="text" id="email" name="email" placeholder="example@example.com">
 				
-				loading.style.display = 'none'; // hide loader after content is loaded
+				<label for="fname">Broj telefona:</label>
+				<input type="text" id="number" name="broj tel" placeholder="065-123-456">
 			
-			}
-
-			loadHTML('footer', 'footer.html');
-			loadHTML('header', 'header.html');
+				<label for="lname">Ime i prezime:</label>
+				<input type="text" id="name_surname" name="ime prezime" placeholder="Ana Anić">
 			
+				<label for="description">Opis šta želite:</label>
+				<input type="text" id="description" name="opis" placeholder="Karikatura mene i moga psa sa jaknom...">
+			
+				<label for="datum">Datum kada želite da preuzmete:</label>
+				<input type="date" id="datum" name="datum">
+				
+				<label for="slike">Ubacite slike:</label>
+				<input type="file" id="slike" name="slike" accept="image/*">
+				
+				<label>Da li želite uslugu uramljivanja?</label>
+				<div class="radio-container">
+					<input type="radio" id="da" name="uramljivanje" value="da">
+					<label for="da">Da</label>
+	
+					<input type="radio" id="ne" name="uramljivanje" value="ne" checked>
+					<label for="ne">Ne</label>
+				</div>
 
-			// Function to highlight current menu
-			function highlightCurrentMenu() {
-			const currentPage = window.location.pathname.split("/").pop();
-			const menuLinks = document.querySelectorAll('#header ul li a');
+				<input type="submit" value="Pošalji">
+			</div>
+		</form>
+	</div>
 
-			menuLinks.forEach(link => {
-				const linkPage = link.getAttribute('href').split("/").pop();
-				if (linkPage === currentPage) {
-				link.parentElement.classList.add('current');
-				} else {
-				link.parentElement.classList.remove('current');
-				}
-			});
-			}
-		</script>
 
-	</body>
-</html>
+</div>
